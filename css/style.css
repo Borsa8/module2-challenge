@@ -1,10 +1,346 @@
-/* Apply on all elements */
-* {
-  box-sizing: border-box;
-  padding: 0;
-  border-spacing: 0;
-  margin: 0;
-  padding: 0;
-  font-family: 'Poppins', sans-serif;
+/* All elements */
+
+*{
+	box-sizing: border-box;
+	padding: 0;border-spacing: 0px;
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
 }
 
+/* Styles for paragraphs */
+
+p{
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	font-size: 18px;
+	line-height: 26px;
+	color: #00171F;
+	font-weight: 400;
+}
+
+/* Styles for headings */
+
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Poppins', sans-serif;
+	color: #00171F;
+}
+
+body{
+	background-color: #fff;
+}
+
+h3{
+	font-size: 30px;
+}
+
+.container{
+	width: 100%;
+	max-width: 100%;
+}
+
+.header-all{
+	width: 100%;
+	max-width: 100%;
+	background-color: #00171F;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1%;
+}
+.header-text h1{
+	background-color: #007EA7;
+    font-size: 55px;
+    line-height: normal;
+    padding: 0 15px 0 5%;
+    padding-left: 70px;
+}
+.header-text h1 a {
+    text-decoration: none;
+    color: #00171F;
+}
+.header-all nav{
+	padding-right: 5%;
+}
+.header-all .topNav {
+    display: flex;
+}
+.header-all .topNav li {
+    padding: 5px;
+    list-style: none;
+}
+
+.header-all .topNav a {
+    color: #007EA7;
+    font-size: 24px;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-bottom: 4px solid #007EA7;
+}
+
+.header-all .topNav a:hover {
+  -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
+  background-color: #65676E;
+}
+.banner-sec{
+	background-image: url(../images/02-hero-bg.jpg);
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 195px;
+    
+    position: relative;
+}
+.banner-sec .banner-text h2{
+	background-color: #007EA7;
+    color: #00171F;
+    font-size: 35px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    right: 5%;
+}
+
+.container {
+    width: 92%;
+    padding-bottom: 120px !important;
+    margin: 40px auto 0px auto;
+    display: grid;
+    grid-template-columns: 16% 76%;
+    gap: 4%;
+}
+.container .page-section{
+	
+    border-right: 4px solid #00171F;
+    font-size: 40px;
+    text-align: end;
+    padding-right: 15px;
+
+}
+.container .page-section h2{
+	font-size: 42px;
+}
+
+.about-me .profile {
+    width: 20%;
+    margin: 0 2% 1% 0;
+    border: 5px solid #007EA7;
+    float: left;
+}
+.about-me .right p{
+	font-size: 15px;
+	line-height: 24px;
+}
+
+.p0 {
+    grid-area: p0;
+}
+figure {
+    width: 100%;
+    position: relative;
+    border: 5px solid #007EA7;
+}
+.image img {
+    /* border: 5px solid var(--IMAGE-BORDER); */
+    object-fit: cover;
+    width: 100%;
+    filter: sepia(30%);
+    /* filter: grayscale(50%); */
+    opacity: 70%;
+    display: block;
+}
+.image img:hover, .image figure:hover {
+    filter: sepia(0%);
+    /* filter: grayscale(0%); */
+    opacity: 100%;
+    transition: 500ms;
+    
+}
+.figcaption {
+    background-color: #007EA7;
+    padding: 10px;
+    position: absolute;
+    bottom: 30px;
+}
+.figcaption h3{
+	font-size: 16px;
+}
+.figcaption p{
+	font-size: 14px;
+}
+.p1 {
+    grid-area: p1;
+}
+.p2 {
+    grid-area: p2;
+}
+.p3 {
+    grid-area: p3;
+}
+.p4 {
+    grid-area: p4;
+}
+#portfolio {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 410px 210px 210px;
+    grid-template-areas:
+        "p0 p0"
+        "p1 p2"
+        "p3 p4";
+    gap: 20px;
+}
+
+
+ul.bottomNav {
+    /* height: 200px; */
+    /* min-height: calc(100vh - 20rem); */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    /* margin-top: 50px; */
+    padding: 30px;
+}
+ul.bottomNav li{
+	list-style: none;
+}
+.bottomNav a {
+    color: #00171F;
+    display: inline-block;
+    font-size: 24px;
+    margin-left: 10px;
+    padding: 5px;
+}
+.bottomNav a:hover {
+  -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
+  background-color: #007EA7;
+}
+/* Responsive */
+@media only screen and (min-width:992px) and (max-width:1200px){
+	
+
+}
+@media only screen and (max-width:992px){
+	
+	.header-text h1 {
+    width: 100% !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    text-align: center !important;
+    font-size: 42px;
+}
+.header-all {
+    
+    display: block !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    flex-wrap: wrap !important;
+    padding: 0 !important;
+}
+.header-all nav {
+    /* display: block; */
+    width: 100%;
+    /* margin: 0 auto; */
+    display: flex;
+    justify-content: space-between;
+}
+.header-all  .topNav {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 5px;
+}
+.header-all .topNav a {
+   
+    font-size: 18px ;
+   
+    padding: 0 5px 0px 5px;
+    display: flex;
+    justify-content: center;
+}
+.banner-sec .banner-text h2{
+	background-color: #007EA7;
+    color: #00171F;
+    font-size: 30px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    right: 5%;
+}
+.container {
+    width: 95%;
+    /* margin: 40px auto 0px auto; */
+    display: grid;
+    grid-template-columns: 100%;
+}
+.container .page-section {
+    border-right: 0;
+    border-bottom: 4px solid #007EA7;
+    text-align: center;
+    
+}
+.container .right{
+	padding-top: 0px;
+}
+#portfolio {
+    width: 100%;
+    /* display: flex; */
+    /* flex-direction: column; */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 200px 200px 200px 200px;
+    grid-template-areas:
+        "p0"
+        "p1"
+        "p2"
+        "p3"
+        "p4";
+}
+#portfolio img {
+    height: 190px;
+}
+ul.bottomNav {
+    padding: 0px;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+	
+}
+
+@media only screen and (min-width:576px) and (max-width:768px){
+	
+	
+
+
+}
+
+
+
+
+
+@media only screen and (max-width:576px){
+	
+	
+.header-all .topNav a {
+   
+    font-size: 14px ;
+   
+    padding: 0 5px 0px 5px;
+    display: flex;
+    justify-content: center;
+}
+
+}
